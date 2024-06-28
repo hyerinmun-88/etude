@@ -1,0 +1,111 @@
+<style>
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+    img{
+        width:100%
+    }
+
+    #main-banner{
+        width:1920px;
+        height:480px;
+
+        /* border-width:1px;
+        border-style:solid;
+        border-color:red; */
+    }
+    img{
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    #main-banner01{
+        display:block;
+    }
+    #main-banner02{
+        display:none;
+    }
+    #main-banner03{
+        display:none;
+    }
+    #main-banner04{
+        display:none;
+    }
+    #pagination{
+        width:70px;
+        margin:0 auto;
+        padding-top:440px;
+        position:relative;
+        display:flex;
+        justify-content:space-between;
+    }
+    p{
+        width:10px;
+        height:10px;
+        border-radius:5px;
+        background-color:#999999;
+    }
+    #btn01{
+        background-color:#d91438;
+    }
+    #btn02{
+        background-color:#999999;
+    }
+    #btn03{
+        background-color:#999999;
+    }
+    #btn04{
+        background-color:#999999;
+    }
+</style>
+
+<div id="main-banner">
+    <img id="main-banner01" src="./main-banner01.jpg" alt="자몽 이벤트">
+    <img id="main-banner02" src="./main-banner02.jpg" alt="수박 이벤트">
+    <img id="main-banner03" src="./main-banner03.jpg" alt="파리 이벤트">
+    <img id="main-banner04" src="./main-banner04.jpg" alt="빙수 이벤트">
+    <div id="pagination">
+        <p id="btn01" onclick="
+            document.querySelector('#main-banner01').style.display='block';
+            document.querySelector('#main-banner02').style.display='none';
+            document.querySelector('#main-banner03').style.display='none';
+            document.querySelector('#main-banner04').style.display='none';
+            document.querySelector('#btn01').style.background='#d91438';
+            document.querySelector('#btn02').style.background='#999999';
+            document.querySelector('#btn03').style.background='#999999';
+            document.querySelector('#btn04').style.background='#999999';
+        "></p>
+        <p id="btn02" onclick="
+            document.querySelector('#main-banner02').style.display='block';
+            document.querySelector('#main-banner01').style.display='none';
+            document.querySelector('#main-banner03').style.display='none';
+            document.querySelector('#main-banner04').style.display='none';
+            document.querySelector('#btn02').style.background='#d91438';
+            document.querySelector('#btn01').style.background='#999999';
+            document.querySelector('#btn03').style.background='#999999';
+            document.querySelector('#btn04').style.background='#999999';
+        "></p>
+        <p id="btn03" onclick="
+            document.querySelector('#main-banner03').style.display='block';
+            document.querySelector('#main-banner02').style.display='none';
+            document.querySelector('#main-banner01').style.display='none';
+            document.querySelector('#main-banner04').style.display='none';
+            document.querySelector('#btn03').style.background='#d91438';
+            document.querySelector('#btn02').style.background='#999999';
+            document.querySelector('#btn01').style.background='#999999';
+            document.querySelector('#btn04').style.background='#999999';
+        "></p>
+        <p id="btn04" onclick="
+            document.querySelector('#main-banner04').style.display='block';
+            document.querySelector('#main-banner03').style.display='none';
+            document.querySelector('#main-banner02').style.display='none';
+            document.querySelector('#main-banner01').style.display='none';
+            document.querySelector('#btn04').style.background='#d91438';
+            document.querySelector('#btn03').style.background='#999999';
+            document.querySelector('#btn02').style.background='#999999';
+            document.querySelector('#btn01').style.background='#999999';
+            "></p>
+    </div>
+</div>
